@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Profile Page</title>
+{% endblock %}
+
+{% block body %}
+<h1>user Details</h1>
+    
+    <h3> Name   ={{uo.first_name}}{{ uo.last_name}}</h3>
+    <h3>Email  ={{uo.email}}</h3>
+    <h3>City   ={{ uo.city }}</h3>
+    <img src="{{ uo.profile_pic.url }}" alt="" srcset="">
+{% endblock %}

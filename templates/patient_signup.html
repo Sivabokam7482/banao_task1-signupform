@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   <title>Patient Signup Form</title>
+{% endblock %}
+{% block body %}
+    <center>
+        <h1>Fill in the Form and Patient Signup </h1>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" value="Signup">
+        </form>
+    </center>   1
+{% endblock %}
